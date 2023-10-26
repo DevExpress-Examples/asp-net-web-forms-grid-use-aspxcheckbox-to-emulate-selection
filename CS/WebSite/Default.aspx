@@ -15,7 +15,7 @@
         <dxwgv:ASPxGridView ID="grid" runat="server" ClientInstanceName="grid" 
             AutoGenerateColumns="False" DataSourceID="sds" KeyFieldName="ProductID">
             <Columns>
-                <dxwgv:GridViewDataTextColumn Caption="#" VisibleIndex="0">
+                <dxwgv:GridViewDataTextColumn Caption="#">
                     <DataItemTemplate>
                         <dxe:ASPxCheckBox ID="cbCheck" runat="server" AutoPostBack="false" OnLoad="cbCheck_Load" />
                     </DataItemTemplate>
