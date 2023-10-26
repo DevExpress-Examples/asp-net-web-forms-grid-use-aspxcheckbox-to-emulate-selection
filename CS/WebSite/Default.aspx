@@ -12,34 +12,26 @@
 <body>
     <form id="frm" runat="server">
     <div>
-        <dxwgv:ASPxGridView ID="grid" runat="server" ClientInstanceName="grid" AutoGenerateColumns="False"
-            DataSourceID="sds" KeyFieldName="ProductID">
+        <dxwgv:ASPxGridView ID="grid" runat="server" ClientInstanceName="grid" 
+            AutoGenerateColumns="False" DataSourceID="sds" KeyFieldName="ProductID">
             <Columns>
                 <dxwgv:GridViewDataTextColumn Caption="#" VisibleIndex="0">
                     <DataItemTemplate>
                         <dxe:ASPxCheckBox ID="cbCheck" runat="server" AutoPostBack="false" OnLoad="cbCheck_Load" />
                     </DataItemTemplate>
                     <HeaderTemplate >
-                    <dxe:ASPxCheckBox ID="SelectAllCheckBox" runat="server" ToolTip="Select/Unselect all rows on the page"
-                        ClientSideEvents-CheckedChanged="function(s, e) { grid.SelectAllRowsOnPage(s.GetChecked()); grid.PerformCallback(); }" />
+                        <dxe:ASPxCheckBox ID="SelectAllCheckBox" runat="server" ToolTip="Select/Unselect all rows on the page"
+                            ClientSideEvents-CheckedChanged="function(s, e) { grid.SelectAllRowsOnPage(s.GetChecked()); grid.PerformCallback(); }" />
                     </HeaderTemplate>
                     <HeaderStyle HorizontalAlign="Center" />
                 </dxwgv:GridViewDataTextColumn>
-                <dxwgv:GridViewDataTextColumn FieldName="ProductID" ReadOnly="True" VisibleIndex="1">
-                    <EditFormSettings Visible="False" />
-                </dxwgv:GridViewDataTextColumn>
-                <dxwgv:GridViewDataTextColumn FieldName="ProductName" VisibleIndex="2">
-                </dxwgv:GridViewDataTextColumn>
-                <dxwgv:GridViewDataTextColumn FieldName="QuantityPerUnit" VisibleIndex="3">
-                </dxwgv:GridViewDataTextColumn>
-                <dxwgv:GridViewDataTextColumn FieldName="UnitPrice" VisibleIndex="4">
-                </dxwgv:GridViewDataTextColumn>
-                <dxwgv:GridViewDataTextColumn FieldName="UnitsInStock" VisibleIndex="5">
-                </dxwgv:GridViewDataTextColumn>
-                <dxwgv:GridViewDataTextColumn FieldName="UnitsOnOrder" VisibleIndex="6">
-                </dxwgv:GridViewDataTextColumn>
-                <dxwgv:GridViewDataTextColumn FieldName="ReorderLevel" VisibleIndex="7">
-                </dxwgv:GridViewDataTextColumn>
+                <dxwgv:GridViewDataTextColumn FieldName="ProductID" />
+                <dxwgv:GridViewDataTextColumn FieldName="ProductName" />
+                <dxwgv:GridViewDataTextColumn FieldName="QuantityPerUnit" />
+                <dxwgv:GridViewDataTextColumn FieldName="UnitPrice" />
+                <dxwgv:GridViewDataTextColumn FieldName="UnitsInStock" />
+                <dxwgv:GridViewDataTextColumn FieldName="UnitsOnOrder" />
+                <dxwgv:GridViewDataTextColumn FieldName="ReorderLevel" />
             </Columns>
         </dxwgv:ASPxGridView>
         <asp:SqlDataSource ID="sds" runat="server" ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>"
