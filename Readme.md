@@ -14,7 +14,7 @@ This example demonstrates how to emulate the [selection](https://docs.devexpress
 
 ## Implementation Details
 
-The [DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) contains a [ASPxCheckBox](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox) control. The [CheckedChanged](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox.CheckedChanged) event handler calls the [SelectRowOnPage](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.SelectRowOnPage(visibleIndex)) method to selecn or deselect the corresponding row.
+[DataItemTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewDataColumn.DataItemTemplate) contains a [ASPxCheckBox](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox) control. The [CheckedChanged](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox.CheckedChanged) event handler calls the [SelectRowOnPage](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.SelectRowOnPage(visibleIndex)) method to select or deselect the corresponding row.
 
 ```aspx
 <dx:GridViewDataTextColumn Caption="#" >
@@ -32,7 +32,7 @@ protected void cbCheck_Load(object sender, EventArgs e) {
 }
 ```
 
-The [HeaderTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewColumn.HeaderTemplate) contains a [ASPxCheckBox](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox) control to implement _select all_ functionality. For this check box, the [CheckedChanged](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox.CheckedChanged) event handler calls [SelectAllRowsOnPage](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.SelectAllRowsOnPage) method to to selecn or deselect all grid rows.
+[HeaderTemplate](https://docs.devexpress.com/AspNet/DevExpress.Web.GridViewColumn.HeaderTemplate) contains a [ASPxCheckBox](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox) control to implement _select all_ functionality. For this check box, the [CheckedChanged](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCheckBox.CheckedChanged) event handler calls the [SelectAllRowsOnPage](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.SelectAllRowsOnPage) method to selecn or deselect all grid rows.
 
 ```aspx
 <dx:GridViewDataTextColumn Caption="#" >
