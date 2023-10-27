@@ -8,7 +8,7 @@
 **[[Run Online]](https://codecentral.devexpress.com/e1559/)**
 <!-- run online end -->
 
-This example demonstrates how to emalate the [selection](https://docs.devexpress.com/AspNet/3737/components/grid-view/concepts/focus-and-navigation/selection) behavior in [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) control.
+This example demonstrates how to emulate the [selection](https://docs.devexpress.com/AspNet/3737/components/grid-view/concepts/focus-and-navigation/selection) behavior in [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) control.
 
 ![](grid-with-checkboxes.png)
 
