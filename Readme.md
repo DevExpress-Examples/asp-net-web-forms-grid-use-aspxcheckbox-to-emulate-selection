@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # Grid View for ASP.NET Web Forms - How to use ASPxCheckBox in DataItemTemplate to implement a selection column
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128532130/)**
-<!-- run online end -->
 
 This example demonstrates how to emulate the [selection](https://docs.devexpress.com/AspNet/3737/components/grid-view/concepts/focus-and-navigation/selection) behavior in [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView) control.
 
